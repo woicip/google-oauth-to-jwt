@@ -12,11 +12,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const cors_1 = __importDefault(require("cors"));
 const chalk_1 = __importDefault(require("chalk"));
 const express_1 = __importDefault(require("express"));
 const GoogleOAuthToJWT_1 = __importDefault(require("./GoogleOAuthToJWT"));
 const app = (0, express_1.default)();
 const port = 1270;
+app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.get('/:access_token?', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
@@ -32,3 +34,4 @@ app.get('/:access_token?', (req, res) => __awaiter(void 0, void 0, void 0, funct
 app.listen(port, () => {
     console.log(`${chalk_1.default.green('Google OAuth to JWT')} is running at http://localhost:${port}`);
 });
+exports.default = app;
