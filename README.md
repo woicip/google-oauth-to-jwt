@@ -1,5 +1,5 @@
 # google-oauth-to-jwt
-Parse your access_token from google oauth to JWT for your backend server
+Parse your `access_token` from google oauth to JWT for your backend server
 
 ## Motivation
 If you developing front end web app and using google oauth for authentication you might using library called `@react-oauth/google` right ?
