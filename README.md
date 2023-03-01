@@ -11,5 +11,5 @@ So that's why I made this API/library for you to get JWT token from the `access_
 ## Usage
 GET `https://google-oauth-to-jwt.vercel.app/{your_access_token}`
 ```css
-Return => { "tokenId: "RANDOM_JWT_TOKEN" }
+Return => { "tokenId": "RANDOM_JWT_TOKEN" }
 ```
