@@ -2,10 +2,10 @@
   "name": "google-oauth-to-jwt",
   "version": "1.0.0",
   "description": "Parse your access_token from google oauth to JWT for your backend server",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node index.js"
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
