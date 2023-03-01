@@ -1,3 +1,4 @@
+import cors from 'cors';
 import chalk from 'chalk';
 import express from 'express';
 import { Request, Response } from 'express';
@@ -6,6 +7,7 @@ import GoogleOAuthToJWT from './GoogleOAuthToJWT';
 const app = express();
 const port = 1270;
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
