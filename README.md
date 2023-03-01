@@ -7,3 +7,9 @@ So basically if you are using hook API like `useGoogleLogin` from the lib you'll
 
 ## Goals
 So that's why I made this API/library for you to get JWT token from the `access_token` to process the JWT on your backend server
+
+## Usage
+GET https://google-oauth-to-jwt.vercel.app/`${your_access_token}`
+```
+=> { "tokenId: "RANDOM_JWT_TOKEN" }
+```
